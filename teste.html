@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodapé - Contagem360</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .social-link {
+      transition: color .2s ease, transform .2s ease;
+      color: #fff;
+    }
+
+    .social-link:hover {
+      color: #f59e0b;
+      transform: translateY(-2px);
+    }
+
+    .footer-nav-link {
+      color: #e2e8f0;
+      transition: color .2s ease;
+    }
+
+    .footer-nav-link:hover {
+      color: #f59e0b;
+    }
+
+    .newsletter-btn {
+      transition: background-color .2s ease;
+    }
+
+    .newsletter-btn:hover {
+      background-color: #d97706;
+    }
+
+    .footer-text {
+      color: #cbd5e1;
+    }
+
+    :focus-visible {
+      outline: 2px solid #f59e0b;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <footer class="w-full" style="background:#44516d;">
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+        <!-- Logo -->
+        <div class="md:col-span-3">
+
+          <div class="flex items-center gap-3 mb-4">
+
+            <!-- Logo -->
+            <img src="./logo sem fundo.png" alt="Contagem360" class="h-24 w-auto">
+
+            <!-- Nome e slogan -->
+            <div>
+              <h2 class="text-xl font-bold">
+                <span class="text-white">Contagem</span><span class="text-orange-500">360</span>
+              </h2>
+
+              <p class="footer-text text-xs">
+                Conectando você, negócios e oportunidades.
+              </p>
+            </div>
+
+
+          </div>
+
+          <p class="footer-text mb-5">
+            O portal que conecta você aos eventos, serviços, oportunidades e pequenos negócios da cidade de Contagem.
+          </p>
+
+          <div class="flex gap-4">
+
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i data-lucide="youtube"></i>
+            </a>
+
+            <a href="#" class="social-link" aria-label="WhatsApp">
+              <i data-lucide="message-circle"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Links -->
+
+        <nav class="md:col-span-2">
+
+          <h2 class="text-white font-semibold mb-4">
+            Links Rápidos
+          </h2>
+
+          <ul class="space-y-2">
+
+            <li><a href="#" class="footer-nav-link">Página Inicial</a></li>
+
+            <li><a href="#" class="footer-nav-link">Eventos</a></li>
+
+            <li><a href="#" class="footer-nav-link">Empresas</a></li>
+
+            <li><a href="#" class="footer-nav-link">Contato</a></li>
+
+          </ul>
+
+        </nav>
+
+        <!-- Institucional -->
+
+        <nav class="md:col-span-2">
+
+          <h2 class="text-white font-semibold mb-4">
+            Institucional
+          </h2>
+
+          <ul class="space-y-2">
+
+            <li><a href="#" class="footer-nav-link">Sobre Nós</a></li>
+
+            <li><a href="#" class="footer-nav-link">Política de Privacidade</a></li>
+
+            <li><a href="#" class="footer-nav-link">Termos de Uso</a></li>
+
+            <li><a href="#" class="footer-nav-link">Perguntas Frequentes</a></li>
+
+          </ul>
+
+        </nav>
+
+        <!-- Atendimento -->
+
+        <div class="md:col-span-2">
+
+          <h2 class="text-white font-semibold mb-4">
+            Atendimento
+          </h2>
+
+          <ul class="space-y-3 footer-text">
+
+            <li class="flex items-start gap-3">
+              <i data-lucide="phone" class="text-amber-500 w-4 h-4 mt-1 flex-shrink-0"></i>
+              <a href="tel:+5531999999999" class="footer-nav-link break-all">
+                (31) 99999-9999
+              </a>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <i data-lucide="mail" class="text-amber-500 w-4 h-4 mt-1 flex-shrink-0"></i>
+              <a href="mailto:contato@contagem360.com.br" class="footer-nav-link break-all">
+                contato@contagem360.com.br
+              </a>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <i data-lucide="clock" class="text-amber-500 w-4 h-4 mt-1 flex-shrink-0"></i>
+              <span>Segunda a Sexta • 08h às 18h</span>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="text-amber-500 w-4 h-4 mt-1 flex-shrink-0"></i>
+              <span>Contagem • Minas Gerais</span>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- Newsletter -->
+
+        <div class="md:col-span-3">
+
+          <div class="h-full border border-white-500 rounded-xl p-6 bg-gray-800/50 hover:bg-gray-800/70 transition-all">
+
+              <h2 class="text-white text-xl font-semibold mb-4">
+                  Receba nossas novidades
+              </h2>
+
+              <p class="footer-text text-sm leading-6 mb-5">
+                  Cadastre seu e-mail e fique por dentro dos eventos, notícias e oportunidades da cidade.
+              </p>
+
+              <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3">
+
+                  <input
+                      id="newsletter-email"
+                      type="email"
+                      placeholder="Digite seu e-mail"
+                      required
+                      class="w-full flex-1 rounded-md px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500">
+
+                  <button
+                      type="submit"
+                      class="newsletter-btn flex items-center justify-center rounded-md bg-amber-500 px-5 py-3 font-bold text-[#0a1940] sm:w-auto w-full">
+
+                      <i data-lucide="arrow-right" class="w-5 h-5"></i>
+
+                  </button>
+
+              </form>
+
+              <p id="newsletter-success" class="hidden mt-4 text-sm text-green-400">
+                  Cadastro realizado com sucesso!
+              </p>
+
+          </div>
+
+      </div>
+
+      </div>
+
+      <hr class="my-8 border-slate-700">
+
+      <p class="text-center text-slate-400 text-sm">
+        © 2026 Contagem360. Todos os direitos reservados.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    const form = document.getElementById("newsletter-form");
+    const email = document.getElementById("newsletter-email");
+    const success = document.getElementById("newsletter-success");
+
+    form.addEventListener("submit", function (e) {
+
+      e.preventDefault();
+
+      if (email.checkValidity()) {
+
+        success.classList.remove("hidden");
+
+        email.value = "";
+
+      }
+
+    });
+  </script>
+
+</body>
+
+</html>
