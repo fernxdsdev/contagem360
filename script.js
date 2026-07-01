@@ -10,7 +10,7 @@ FormLogin.addEventListener('submit', function (event){
 
     console.log(email);
     console.log(senha);
-    
+
     if (email.value.trim() == "") {
 
         email.classList.add("is-invalid");
