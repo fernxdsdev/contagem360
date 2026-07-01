@@ -65,11 +65,16 @@
                     <ul class="navbar-nav mx-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link " href="index.html">
                                 Home
                             </a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link active" href="eventos.html">
+                                Criar Eventos
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 Eventos
@@ -134,211 +139,201 @@
     <section class="py-5 bg-light">
 
         <div class="container">
-    
+
             <div class="row justify-content-center">
-    
+
                 <div class="col-lg-8">
-    
+
                     <div class="card shadow border-0">
-    
+
                         <div class="card-body p-5">
-    
+
                             <h2 class="text-center fw-bold mb-4">
                                 <i class="bi bi-calendar-event text-primary"></i>
                                 Cadastro de Evento
                             </h2>
-    
+
                             <form id="formEvento">
-    
+
                                 <div class="row">
-    
+
                                     <div class="col-md-8 mb-3">
-    
+
                                         <label for="nomeEvento" class="form-label">
                                             Nome do Evento
                                         </label>
-    
-                                        <input type="text"
-                                            class="form-control"
-                                            id="nomeEvento"
+
+                                        <input type="text" class="form-control" id="nomeEvento"
                                             placeholder="Digite o nome do evento">
-    
+
                                         <div class="invalid-feedback">
                                             Informe o nome do evento.
                                         </div>
-    
+
                                     </div>
-    
+
                                     <div class="col-md-4 mb-3">
-    
+
                                         <label for="categoria" class="form-label">
                                             Categoria
                                         </label>
-    
+
                                         <select class="form-select" id="categoria">
-    
+
                                             <option value="" selected>
                                                 Selecione
                                             </option>
-    
+
                                             <option>Show</option>
                                             <option>Festival</option>
                                             <option>Esportivo</option>
                                             <option>Cultural</option>
                                             <option>Feira</option>
-    
+
                                         </select>
-    
+
                                         <div class="invalid-feedback">
                                             Selecione uma categoria.
                                         </div>
-    
+
                                     </div>
-    
+
                                 </div>
-    
+
                                 <div class="row">
-    
+
                                     <div class="col-md-6 mb-3">
-    
+
                                         <label for="dataEvento" class="form-label">
                                             Data
                                         </label>
-    
-                                        <input type="date"
-                                            class="form-control"
-                                            id="dataEvento">
-    
+
+                                        <input type="date" class="form-control" id="dataEvento">
+
                                         <div class="invalid-feedback">
                                             Informe a data.
                                         </div>
-    
+
                                     </div>
-    
+
                                     <div class="col-md-6 mb-3">
-    
+
                                         <label for="horaEvento" class="form-label">
                                             Horário
                                         </label>
-    
-                                        <input type="time"
-                                            class="form-control"
-                                            id="horaEvento">
-    
+
+                                        <input type="time" class="form-control" id="horaEvento">
+
                                         <div class="invalid-feedback">
                                             Informe o horário.
                                         </div>
-    
+
                                     </div>
-    
+
                                 </div>
-    
+
                                 <div class="mb-3">
-    
+
                                     <label for="localEvento" class="form-label">
                                         Local
                                     </label>
-    
-                                    <input type="text"
-                                        class="form-control"
-                                        id="localEvento"
+
+                                    <input type="text" class="form-control" id="localEvento"
                                         placeholder="Ex.: Praça da Glória">
-    
+
                                     <div class="invalid-feedback">
                                         Informe o local.
                                     </div>
-    
+
                                 </div>
-    
+
                                 <div class="mb-3">
-    
+
                                     <label for="descricaoEvento" class="form-label">
                                         Descrição
                                     </label>
-    
-                                    <textarea class="form-control"
-                                        rows="5"
-                                        id="descricaoEvento"
+
+                                    <textarea class="form-control" rows="5" id="descricaoEvento"
                                         placeholder="Descreva o evento"></textarea>
-    
+
                                     <div class="invalid-feedback">
                                         Informe uma descrição.
                                     </div>
-    
+
                                 </div>
-    
+
                                 <div class="row">
-    
+
                                     <div class="col-md-6 mb-3">
-    
+
                                         <label for="organizador" class="form-label">
                                             Organizador
                                         </label>
-    
-                                        <input type="text"
-                                            class="form-control"
-                                            id="organizador">
-    
+
+                                        <input type="text" class="form-control" id="organizador">
+                                        <div class="invalid-feedback">
+                                            Informe o nome do Organizador.
+                                        </div>
+
                                     </div>
-    
+
                                     <div class="col-md-6 mb-3">
-    
+
                                         <label for="contato" class="form-label">
                                             Contato
                                         </label>
-    
-                                        <input type="tel"
-                                            class="form-control"
-                                            id="contato"
+
+                                        <input type="tel" class="form-control" id="contato"
                                             placeholder="(31) 99999-9999">
-    
+                                            <div class="invalid-feedback">
+                                                Informe o numero de contato.
+                                            </div>
+
                                     </div>
-    
+
                                 </div>
-    
-                                <div class="mb-4">
-    
+
+
+
+                                <div class="mb-4    ">
+
                                     <label for="imagemEvento" class="form-label">
-                                        Banner do Evento
+                                        Banner do Evento (opcional)
                                     </label>
-    
-                                    <input type="file"
-                                        class="form-control"
-                                        id="imagemEvento">
-    
+
+                                    <input type="file" class="form-control" id="imagemEvento" >
                                 </div>
-    
+                                
+
                                 <div class="text-center">
-    
-                                    <button type="submit"
-                                        class="btn btn-primary px-5">
-    
+
+                                    <button type="submit" class="btn btn-primary px-5">
+
                                         <i class="bi bi-check-circle"></i>
                                         Cadastrar Evento
-    
+
                                     </button>
-    
-                                    <button type="reset"
-                                        class="btn btn-outline-primary px-5 ms-2">
-    
+
+                                    <button type="reset" class="btn btn-outline-primary px-5 ms-2">
+
                                         Limpar
-    
+
                                     </button>
-    
+
                                 </div>
-    
+
                             </form>
-    
+
                         </div>
-    
+
                     </div>
-    
+
                 </div>
-    
+
             </div>
-    
+
         </div>
-    
+
     </section>
 
     <footer class="footer bg-dark text-light pt-5 pb-3">
@@ -524,6 +519,6 @@
 
 
 </body>
-<script src="script.js"></script>
+<script src="scriptEv.js"></script>
 
 </html>
