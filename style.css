@@ -253,7 +253,25 @@ body{
     box-shadow:0 .8rem 2rem rgba(0,0,0,.12);
 
 }
+.btn-fechar{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    color:#0e89fc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.3s;
+}
 
+.btn-fechar:hover{
+    transform:rotate(90deg);
+}
+
+.card{
+    border-radius:20px;
+}
+  
 /* ==========================================
             BOTÕES
 ========================================== */

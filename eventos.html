@@ -38,10 +38,10 @@
 
                 <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
 
-                    <img src="img/logo.png" alt="Logo Contagem 360" width="55" class="me-2">
+                    <img src="img/logo.png" alt="Logo Contagem 360" width="150" class="me-2">
                     <div>
 
-                        <h4 class="m-0">Contagem 360</h4>
+                        <h4 class="m-0">Contagem <span id="xbox">360</span></h4>
 
                         <small class="text-muted">
                             Turismo • Cultura • Eventos
@@ -135,15 +135,24 @@
     <section class="py-5 bg-light">
 
         <div class="container">
-
+    
             <div class="row justify-content-center">
-
+    
                 <div class="col-lg-8">
-
-                    <div class="card shadow border-0">
-
+    
+                    <div class="card shadow-lg border-0 rounded-4 position-relative">
+    
+                        <!-- Botão Fechar -->
+                        <button type="button"
+                            class="btn btn-fechar position-absolute top-0 end-0 m-3"
+                            onclick="history.back()">
+    
+                            <i class="bi bi-x-lg fs-4"></i>
+    
+                        </button>
+    
                         <div class="card-body p-5">
-
+    
                             <h2 class="text-center fw-bold mb-4">
                                 <i class="bi bi-calendar-event text-primary"></i>
                                 Cadastro de Evento
